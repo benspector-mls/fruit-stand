@@ -22,13 +22,17 @@ const renderInventory = () => {
 const renderCart = (cart) => {
   const cartList = document.querySelector("#cart-list");
   cartList.innerHTML = '';
-  cart.getItems().forEach((item) => {
+
+  const cartItems = cart.getItems();
+  const cartTotal = cart.getTotal();
+
+  cartItems.forEach((item) => {
     const li = document.createElement('li');
     li.innerHTML = `${item.name} $${item.price} `;
     cartList.append(li);
   })
 
-  document.querySelector("#cart-total").textContent = `Total: $${cart.getTotal()}`;
+  document.querySelector("#cart-total").textContent = `Total: $${cartTotal}`;
 }
 
 const main = () => {
