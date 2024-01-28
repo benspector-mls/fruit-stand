@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "item_name": "pineapple",
+      "price": 3,
+      "img_url": "https://pngimg.com/d/pineapple_PNG2759.png"
+    },
+    {
+      "item_name": "mango",
+      "price": 2,
+      "img_url": "https://pngimg.com/uploads/mango/small/mango_PNG9174.png"
+    },
+    {
+      "item_name": "strawberry",
+      "price": 4,
+      "img_url": "https://pngimg.com/uploads/strawberry/small/strawberry_PNG2587.png"
+    },
+    {
+      "item_name": "papaya",
+      "price": 3,
+      "img_url": "https://pngimg.com/uploads/papaya/small/papaya_PNG10.png"
+    },
+    {
+      "item_name": "pear",
+      "price": 2,
+      "img_url": "https://pngimg.com/uploads/pear/small/pear_PNG3443.png"
+    },
+    {
+      "item_name": "apple",
+      "price": 1,
+      "img_url": "https://pngimg.com/uploads/apple/small/apple_PNG12490.png"
+    }
+  ]
+}

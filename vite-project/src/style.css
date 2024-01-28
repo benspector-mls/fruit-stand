@@ -1,0 +1,122 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0.2rem 2rem;
+  color: white;
+  background-color: grey;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+button:active {
+  background-color: black;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#inventory-and-cart {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+}
+
+/******************/
+/** INVENTORY **/
+/******************/
+
+#inventory {
+  background: rgb(67, 67, 67);
+  border-radius: 4px;
+  padding: 1rem;
+  min-width: 300px;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+#inventory-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.item-card {
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px 4px black;
+  padding: 1rem;
+  flex: 1 0 260px;
+}
+
+.item-card > img {
+  height: 200px;
+}
+
+/******************/
+/** CART **/
+/******************/
+
+#cart {
+  background: rgb(67, 67, 67);
+  height: fit-content;
+
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 275px;
+  position: sticky;
+  top: 2rem;
+}
+
+
+#cart-list {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  
+  gap: 0.5rem;
+  align-items: start;
+}
