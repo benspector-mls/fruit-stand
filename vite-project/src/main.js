@@ -2,6 +2,7 @@ import './style.css'
 import { items } from './items.json'
 import ShoppingCart from './model/ShoppingCart';
 import CartItem from './model/CartItem';
+import User from './model/User';
 
 const renderInventory = () => {
   const inventoryEl = document.querySelector('#inventory-list');
