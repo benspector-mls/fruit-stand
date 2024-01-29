@@ -11,8 +11,8 @@ class CartItem {
     this.ShoppingCartClass = ShoppingCartClass;
     CartItem.#all.push(this);
   }
-  getToDoList() {
-    return this.ToDoListClass.findBy(this.toDoListId);
+  getShoppingCart() {
+    return this.ShoppingCartClass.findBy(this.cartId);
   }
   static findById(id) {
     CartItem.#all.find((item) => item.id === id);
