@@ -5,7 +5,9 @@ class User {
   #password = null; // a private property
 
   // This constructor will be used by the static methods below
-  // as a way to protect the password before returning to the caller
+  // as a way to protect the password before returning to the caller.
+  // Users of this `User` class should NOT user this and instead 
+  // should use the static `User.create()` method.
   constructor({ id, username, password }) {
     this.id = id;
     this.username = username;
@@ -13,15 +15,15 @@ class User {
   }
 
   static create(username, password) {
-    let users = getUsers();
-    let newUser = { id: getId(), username, password };
+    const newUser = { id: getId(), username, password };
+    const users = getUsers();
     users.push(newUser);
     setUsers(users);
     return new User(newUser);
   }
 
   static list() {
-    let users = getUsers();
+    const users = getUsers();
     console.log(`stored users: `, users);
     return users.map((user) => new User(user));
   }
